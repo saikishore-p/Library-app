@@ -19,7 +19,8 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 HttpMethod.POST,
                 HttpMethod.PATCH,
                 HttpMethod.DELETE,
-                HttpMethod.PUT};
+                HttpMethod.PUT
+              };
 
         config.exposeIdsFor(Book.class); // Springboot automatically hides the primary key of entities. If we need id's to be returned in the API response, we use this
         config.exposeIdsFor(Review.class);
