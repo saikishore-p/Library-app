@@ -2,6 +2,7 @@ package com.project.springbootlibrary.config;
 
 
 import com.project.springbootlibrary.entity.Book;
+import com.project.springbootlibrary.entity.Message;
 import com.project.springbootlibrary.entity.Review;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
@@ -24,9 +25,11 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 
         config.exposeIdsFor(Book.class); // Springboot automatically hides the primary key of entities. If we need id's to be returned in the API response, we use this
         config.exposeIdsFor(Review.class);
+        config.exposeIdsFor(Message.class);
 
         disableHttpMethods(Book.class, config, theUnsupportedActions);
         disableHttpMethods(Review.class, config, theUnsupportedActions);
+        disableHttpMethods(Message.class, config, theUnsupportedActions);
 
         /* Configure CORS Mapping */
 
