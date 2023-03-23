@@ -4,6 +4,8 @@ import lombok.Data;
 
 import java.util.Optional;
 
+// Things in requestmodels package is a special entity that's from the client to us.
+
 @Data
 public class ReviewRequest {
 
