@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:3000") //Our react application will be able to call this controller without getting CORS Error
+@CrossOrigin("https://localhost:3000") //Our react application will be able to call this controller without getting CORS Error
 @RestController
 @RequestMapping("api/books")
 public class BookController {

@@ -24,7 +24,7 @@ export const Carousel = () => {
     // and then it's going to get called each time something in the array below (after the function end) changes. (in that array we can keep variables of state and if the state changes, it will re-trigger useEffect)
     useEffect(() => {
         const fetchBooks = async () => {
-            const baseUrl: string = "http://localhost:8080/api/books";
+            const baseUrl: string = `${process.env.REACT_APP_API}/books`;
 
             const url: string = `${baseUrl}?page=0&size=9`;
 
