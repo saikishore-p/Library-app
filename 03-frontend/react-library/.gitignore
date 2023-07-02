@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+.DS_Store
+
+/ssl-localhost
+/localhost.conf
+src/lib/oktaConfig.ts
